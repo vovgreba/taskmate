@@ -1,0 +1,18 @@
+.allTasks_container {
+  margin: 40px 35px;
+}
+.allTasks_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.allTasks_header h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #00A49A;
+}
+.allTasks_header img {
+  cursor: pointer;
+}
