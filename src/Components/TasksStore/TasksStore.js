@@ -58,7 +58,7 @@ let useTaskStore = create(devtools((set,get) => ({
     const id = get().selectedTaskId
     await axios.delete(`${url}/${id}`)
     get().getTasks();
-    get().hideModal();
+    get().hideConfirmationModal();
   },
   // Змінюємо задачу 
   onChangeTask: async() => {

@@ -1,0 +1,81 @@
+.mySchedule_container {
+  margin: 10px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.mySchedule_button__save {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  background-color: #FF8A35;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 0;
+  cursor: pointer;
+  margin-top: 22px;
+  margin-bottom: 32px;
+  width: 82%;
+}
+
+
+.mySchedule_button__day, .mySchedule_button__dayShow {
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  bottom: 0;
+  background-color: #e4e3e3;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 10px;
+  padding: 15px 0;
+  cursor: pointer;
+  outline: none;
+}
+.mySchedule_button__day::after {
+  position: absolute;
+  content: '';
+  background-image: url(../Images/arrow-right.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+  top: 10px;
+  right: 10px;
+}
+.mySchedule_button__dayShow {
+  position: relative;
+  background-color: #FF8A35;
+}
+.mySchedule_button__dayShow::after {
+  position: absolute;
+  content: '';
+  background-image: url(../Images/arrow-down.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+  top: 10px;
+  right: 10px;
+}
+.mySchedule_interval {
+  padding: 20px;
+}
+.mySchedule_button__interval {
+  color: #FF8A35;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 14px;
+  margin: 10px auto 5px 0;
+  cursor: pointer;
+}
